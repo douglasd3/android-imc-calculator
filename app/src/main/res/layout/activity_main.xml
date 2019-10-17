@@ -17,11 +17,51 @@
         android:text="@string/calculator_imc"/>
 
     <EditText
+        android:id="@+id/weightEditText"
         android:layout_width="200dp"
         android:layout_height="80dp"
         android:layout_below="@+id/titleTextView"
-        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
+        android:hint="@string/weightHint"
         android:layout_marginTop="24dp"/>
+
+    <EditText
+        android:id="@+id/heightEditText"
+        android:layout_width="200dp"
+        android:layout_height="80dp"
+        android:layout_below="@+id/weightEditText"
+        android:layout_centerHorizontal="true"
+        android:hint="@string/heightHint"
+        android:layout_marginTop="24dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_below="@id/heightEditText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp">
+
+        <Button
+            android:id="@+id/calculateButton"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="@string/calculate"
+            android:textColor="@color/colorPrimary"/>
+
+        <Button
+            android:id="@+id/cleanButton"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="@string/clean"
+            android:textColor="@color/colorPrimary"/>
+
+    </LinearLayout>
 
 
 </RelativeLayout>
